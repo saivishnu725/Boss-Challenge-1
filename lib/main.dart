@@ -36,8 +36,12 @@ class _MyAppState extends State<MyApp> {
             number = Random().nextInt(5) + 1;
           });
         },
-        child: Expanded(
-          child: Image.asset('assets/ball$number.png'),
+        child: Row(
+          children: [
+            Expanded(
+              child: Image.asset('assets/ball$number.png'),
+            ),
+          ],
         ),
       ),
     );
